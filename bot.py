@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright, TimeoutError as PWTimeoutError
 import os, json, urllib.parse
 
 app = Flask(__name__)
-SESSION = "/sessions/rohlik-session.json"
+SESSION = "/tmp/rohlik-session.json"
 PORT = int(os.environ.get("PORT", "10000"))
 
 class Item(BaseModel):
