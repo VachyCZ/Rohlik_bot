@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rohlik-basket-bot
+    env: docker
+    plan: starter
+    disk:
+      name: sessions
+      mountPath: /sessions
+      sizeGB: 1
+    envVars:
+      - key: PORT
+        value: "10000"
